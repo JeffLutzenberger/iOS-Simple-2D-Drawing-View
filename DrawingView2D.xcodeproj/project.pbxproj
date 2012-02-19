@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCEBF55314E8339F00AF3C60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55214E8339F00AF3C60 /* UIKit.framework */; };
+		BCEBF55514E8339F00AF3C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55414E8339F00AF3C60 /* Foundation.framework */; };
+		BCEBF55714E8339F00AF3C60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55614E8339F00AF3C60 /* CoreGraphics.framework */; };
+		BCEBF55D14E8339F00AF3C60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCEBF55B14E8339F00AF3C60 /* InfoPlist.strings */; };
+		BCEBF56014E8339F00AF3C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEBF55F14E8339F00AF3C60 /* main.m */; };
+		BCEBF56314E8339F00AF3C60 /* DrawingView2DAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEBF56214E8339F00AF3C60 /* DrawingView2DAppDelegate.m */; };
+		BCEBF56614E8339F00AF3C60 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEBF56414E8339F00AF3C60 /* MainWindow.xib */; };
+		BCEBF56914E8339F00AF3C60 /* DrawingView2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEBF56814E8339F00AF3C60 /* DrawingView2DViewController.m */; };
+		BCEBF56C14E8339F00AF3C60 /* DrawingView2DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEBF56A14E8339F00AF3C60 /* DrawingView2DViewController.xib */; };
+		BCEBF57314E8339F00AF3C60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55214E8339F00AF3C60 /* UIKit.framework */; };
+		BCEBF57414E8339F00AF3C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55414E8339F00AF3C60 /* Foundation.framework */; };
+		BCEBF57514E8339F00AF3C60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55614E8339F00AF3C60 /* CoreGraphics.framework */; };
+		BCEBF57D14E8339F00AF3C60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCEBF57B14E8339F00AF3C60 /* InfoPlist.strings */; };
+		BCEBF58014E8339F00AF3C60 /* DrawingView2DTests.h in Resources */ = {isa = PBXBuildFile; fileRef = BCEBF57F14E8339F00AF3C60 /* DrawingView2DTests.h */; };
+		BCEBF58214E8339F00AF3C60 /* DrawingView2DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEBF58114E8339F00AF3C60 /* DrawingView2DTests.m */; };
+		BCEBF58D14E8344600AF3C60 /* DrawingView2D.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEBF58C14E8344600AF3C60 /* DrawingView2D.m */; };
+		BCEBF59014E834F700AF3C60 /* MyView2D.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEBF58F14E834F700AF3C60 /* MyView2D.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCEBF57614E8339F00AF3C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCEBF54514E8339E00AF3C60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEBF54D14E8339F00AF3C60;
+			remoteInfo = DrawingView2D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCEBF54E14E8339F00AF3C60 /* DrawingView2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingView2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEBF55214E8339F00AF3C60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BCEBF55414E8339F00AF3C60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BCEBF55614E8339F00AF3C60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BCEBF55A14E8339F00AF3C60 /* DrawingView2D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawingView2D-Info.plist"; sourceTree = "<group>"; };
+		BCEBF55C14E8339F00AF3C60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCEBF55E14E8339F00AF3C60 /* DrawingView2D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawingView2D-Prefix.pch"; sourceTree = "<group>"; };
+		BCEBF55F14E8339F00AF3C60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCEBF56114E8339F00AF3C60 /* DrawingView2DAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingView2DAppDelegate.h; sourceTree = "<group>"; };
+		BCEBF56214E8339F00AF3C60 /* DrawingView2DAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingView2DAppDelegate.m; sourceTree = "<group>"; };
+		BCEBF56514E8339F00AF3C60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		BCEBF56714E8339F00AF3C60 /* DrawingView2DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingView2DViewController.h; sourceTree = "<group>"; };
+		BCEBF56814E8339F00AF3C60 /* DrawingView2DViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingView2DViewController.m; sourceTree = "<group>"; };
+		BCEBF56B14E8339F00AF3C60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DrawingView2DViewController.xib; sourceTree = "<group>"; };
+		BCEBF57214E8339F00AF3C60 /* DrawingView2DTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingView2DTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEBF57A14E8339F00AF3C60 /* DrawingView2DTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawingView2DTests-Info.plist"; sourceTree = "<group>"; };
+		BCEBF57C14E8339F00AF3C60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCEBF57E14E8339F00AF3C60 /* DrawingView2DTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawingView2DTests-Prefix.pch"; sourceTree = "<group>"; };
+		BCEBF57F14E8339F00AF3C60 /* DrawingView2DTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingView2DTests.h; sourceTree = "<group>"; };
+		BCEBF58114E8339F00AF3C60 /* DrawingView2DTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingView2DTests.m; sourceTree = "<group>"; };
+		BCEBF58B14E8344600AF3C60 /* DrawingView2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawingView2D.h; path = DrawingView2D/DrawingView2D.h; sourceTree = "<group>"; };
+		BCEBF58C14E8344600AF3C60 /* DrawingView2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawingView2D.m; path = DrawingView2D/DrawingView2D.m; sourceTree = "<group>"; };
+		BCEBF58E14E834F700AF3C60 /* MyView2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyView2D.h; path = DrawingView2D/MyView2D.h; sourceTree = "<group>"; };
+		BCEBF58F14E834F700AF3C60 /* MyView2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyView2D.m; path = DrawingView2D/MyView2D.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCEBF54B14E8339F00AF3C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEBF55314E8339F00AF3C60 /* UIKit.framework in Frameworks */,
+				BCEBF55514E8339F00AF3C60 /* Foundation.framework in Frameworks */,
+				BCEBF55714E8339F00AF3C60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEBF56E14E8339F00AF3C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEBF57314E8339F00AF3C60 /* UIKit.framework in Frameworks */,
+				BCEBF57414E8339F00AF3C60 /* Foundation.framework in Frameworks */,
+				BCEBF57514E8339F00AF3C60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCEBF54314E8339E00AF3C60 = {
+			isa = PBXGroup;
+			children = (
+				BCEBF59114E8351400AF3C60 /* DrawingView */,
+				BCEBF55814E8339F00AF3C60 /* App */,
+				BCEBF5B014E85EA400AF3C60 /* Xibs */,
+				BCEBF57814E8339F00AF3C60 /* DrawingView2DTests */,
+				BCEBF55114E8339F00AF3C60 /* Frameworks */,
+				BCEBF54F14E8339F00AF3C60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCEBF54F14E8339F00AF3C60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCEBF54E14E8339F00AF3C60 /* DrawingView2D.app */,
+				BCEBF57214E8339F00AF3C60 /* DrawingView2DTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCEBF55114E8339F00AF3C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCEBF55214E8339F00AF3C60 /* UIKit.framework */,
+				BCEBF55414E8339F00AF3C60 /* Foundation.framework */,
+				BCEBF55614E8339F00AF3C60 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCEBF55814E8339F00AF3C60 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BCEBF56114E8339F00AF3C60 /* DrawingView2DAppDelegate.h */,
+				BCEBF56214E8339F00AF3C60 /* DrawingView2DAppDelegate.m */,
+				BCEBF56714E8339F00AF3C60 /* DrawingView2DViewController.h */,
+				BCEBF56814E8339F00AF3C60 /* DrawingView2DViewController.m */,
+				BCEBF55914E8339F00AF3C60 /* Supporting Files */,
+			);
+			name = App;
+			path = DrawingView2D;
+			sourceTree = "<group>";
+		};
+		BCEBF55914E8339F00AF3C60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCEBF55A14E8339F00AF3C60 /* DrawingView2D-Info.plist */,
+				BCEBF55B14E8339F00AF3C60 /* InfoPlist.strings */,
+				BCEBF55E14E8339F00AF3C60 /* DrawingView2D-Prefix.pch */,
+				BCEBF55F14E8339F00AF3C60 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCEBF57814E8339F00AF3C60 /* DrawingView2DTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCEBF57F14E8339F00AF3C60 /* DrawingView2DTests.h */,
+				BCEBF58114E8339F00AF3C60 /* DrawingView2DTests.m */,
+				BCEBF57914E8339F00AF3C60 /* Supporting Files */,
+			);
+			path = DrawingView2DTests;
+			sourceTree = "<group>";
+		};
+		BCEBF57914E8339F00AF3C60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCEBF57A14E8339F00AF3C60 /* DrawingView2DTests-Info.plist */,
+				BCEBF57B14E8339F00AF3C60 /* InfoPlist.strings */,
+				BCEBF57E14E8339F00AF3C60 /* DrawingView2DTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCEBF59114E8351400AF3C60 /* DrawingView */ = {
+			isa = PBXGroup;
+			children = (
+				BCEBF58B14E8344600AF3C60 /* DrawingView2D.h */,
+				BCEBF58E14E834F700AF3C60 /* MyView2D.h */,
+				BCEBF58C14E8344600AF3C60 /* DrawingView2D.m */,
+				BCEBF58F14E834F700AF3C60 /* MyView2D.m */,
+			);
+			name = DrawingView;
+			sourceTree = "<group>";
+		};
+		BCEBF5B014E85EA400AF3C60 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				BCEBF56414E8339F00AF3C60 /* MainWindow.xib */,
+				BCEBF56A14E8339F00AF3C60 /* DrawingView2DViewController.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCEBF54D14E8339F00AF3C60 /* DrawingView2D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEBF58514E8339F00AF3C60 /* Build configuration list for PBXNativeTarget "DrawingView2D" */;
+			buildPhases = (
+				BCEBF54A14E8339F00AF3C60 /* Sources */,
+				BCEBF54B14E8339F00AF3C60 /* Frameworks */,
+				BCEBF54C14E8339F00AF3C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawingView2D;
+			productName = DrawingView2D;
+			productReference = BCEBF54E14E8339F00AF3C60 /* DrawingView2D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCEBF57114E8339F00AF3C60 /* DrawingView2DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEBF58814E8339F00AF3C60 /* Build configuration list for PBXNativeTarget "DrawingView2DTests" */;
+			buildPhases = (
+				BCEBF56D14E8339F00AF3C60 /* Sources */,
+				BCEBF56E14E8339F00AF3C60 /* Frameworks */,
+				BCEBF56F14E8339F00AF3C60 /* Resources */,
+				BCEBF57014E8339F00AF3C60 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCEBF57714E8339F00AF3C60 /* PBXTargetDependency */,
+			);
+			name = DrawingView2DTests;
+			productName = DrawingView2DTests;
+			productReference = BCEBF57214E8339F00AF3C60 /* DrawingView2DTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCEBF54514E8339E00AF3C60 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = BCEBF54814E8339E00AF3C60 /* Build configuration list for PBXProject "DrawingView2D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCEBF54314E8339E00AF3C60;
+			productRefGroup = BCEBF54F14E8339F00AF3C60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCEBF54D14E8339F00AF3C60 /* DrawingView2D */,
+				BCEBF57114E8339F00AF3C60 /* DrawingView2DTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCEBF54C14E8339F00AF3C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEBF55D14E8339F00AF3C60 /* InfoPlist.strings in Resources */,
+				BCEBF56614E8339F00AF3C60 /* MainWindow.xib in Resources */,
+				BCEBF56C14E8339F00AF3C60 /* DrawingView2DViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEBF56F14E8339F00AF3C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEBF57D14E8339F00AF3C60 /* InfoPlist.strings in Resources */,
+				BCEBF58014E8339F00AF3C60 /* DrawingView2DTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BCEBF57014E8339F00AF3C60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCEBF54A14E8339F00AF3C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEBF56014E8339F00AF3C60 /* main.m in Sources */,
+				BCEBF56314E8339F00AF3C60 /* DrawingView2DAppDelegate.m in Sources */,
+				BCEBF56914E8339F00AF3C60 /* DrawingView2DViewController.m in Sources */,
+				BCEBF58D14E8344600AF3C60 /* DrawingView2D.m in Sources */,
+				BCEBF59014E834F700AF3C60 /* MyView2D.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEBF56D14E8339F00AF3C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEBF58214E8339F00AF3C60 /* DrawingView2DTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCEBF57714E8339F00AF3C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCEBF54D14E8339F00AF3C60 /* DrawingView2D */;
+			targetProxy = BCEBF57614E8339F00AF3C60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCEBF55B14E8339F00AF3C60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCEBF55C14E8339F00AF3C60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BCEBF56414E8339F00AF3C60 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCEBF56514E8339F00AF3C60 /* en */,
+			);
+			name = MainWindow.xib;
+			path = DrawingView2D;
+			sourceTree = "<group>";
+		};
+		BCEBF56A14E8339F00AF3C60 /* DrawingView2DViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCEBF56B14E8339F00AF3C60 /* en */,
+			);
+			name = DrawingView2DViewController.xib;
+			path = DrawingView2D;
+			sourceTree = "<group>";
+		};
+		BCEBF57B14E8339F00AF3C60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCEBF57C14E8339F00AF3C60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCEBF58314E8339F00AF3C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCEBF58414E8339F00AF3C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		BCEBF58614E8339F00AF3C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingView2D/DrawingView2D-Prefix.pch";
+				INFOPLIST_FILE = "DrawingView2D/DrawingView2D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BCEBF58714E8339F00AF3C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingView2D/DrawingView2D-Prefix.pch";
+				INFOPLIST_FILE = "DrawingView2D/DrawingView2D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BCEBF58914E8339F00AF3C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrawingView2D.app/DrawingView2D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingView2DTests/DrawingView2DTests-Prefix.pch";
+				INFOPLIST_FILE = "DrawingView2DTests/DrawingView2DTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BCEBF58A14E8339F00AF3C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrawingView2D.app/DrawingView2D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingView2DTests/DrawingView2DTests-Prefix.pch";
+				INFOPLIST_FILE = "DrawingView2DTests/DrawingView2DTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCEBF54814E8339E00AF3C60 /* Build configuration list for PBXProject "DrawingView2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEBF58314E8339F00AF3C60 /* Debug */,
+				BCEBF58414E8339F00AF3C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEBF58514E8339F00AF3C60 /* Build configuration list for PBXNativeTarget "DrawingView2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEBF58614E8339F00AF3C60 /* Debug */,
+				BCEBF58714E8339F00AF3C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEBF58814E8339F00AF3C60 /* Build configuration list for PBXNativeTarget "DrawingView2DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEBF58914E8339F00AF3C60 /* Debug */,
+				BCEBF58A14E8339F00AF3C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCEBF54514E8339E00AF3C60 /* Project object */;
+}

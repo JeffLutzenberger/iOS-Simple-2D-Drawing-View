@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DrawingView2DTests' target in the 'DrawingView2DTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
