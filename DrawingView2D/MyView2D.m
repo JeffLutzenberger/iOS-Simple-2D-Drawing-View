@@ -3,7 +3,7 @@
 //  DrawingView2D
 //
 //  Created by Jeff Lutzenberger on 2/12/12.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//  Copyright 2012 Hellroaring Micromachines, LLC. All rights reserved.
 //
 
 #import "MyView2D.h"
@@ -41,13 +41,6 @@
     // Drawing code
     [super  drawRect:rect];
     [super DrawCircle];
-}
-
-//override this to zoom to your model
-- (void)ZoomToExtents
-{
-    //remove this line and implement custom extents code
-    [super ZoomToExtents];
 }
 
 @end

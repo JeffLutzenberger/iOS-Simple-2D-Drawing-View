@@ -8,7 +8,6 @@
 
 #import "DrawingView2D.h"
 
-
 @implementation DrawingView2D
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -32,13 +31,17 @@
         //set pinch gesture
         if( allowPinchGestures )
         {
-            UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchDetected:)];
+            UIPinchGestureRecognizer *pinchRecognizer = 
+                [[UIPinchGestureRecognizer alloc] 
+                 initWithTarget:self action:@selector(pinchDetected:)];
             [self addGestureRecognizer:pinchRecognizer];
         }
         //set tap gesture
         if( allowTapGestures )
         {
-            UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetected:)];
+            UITapGestureRecognizer *tapRecognizer = 
+                [[UITapGestureRecognizer alloc] 
+                 initWithTarget:self action:@selector(tapDetected:)];
             tapRecognizer.numberOfTapsRequired = 2;
             [self addGestureRecognizer:tapRecognizer];
         }
@@ -77,7 +80,9 @@
 {
     CGFloat pinchScale = pinchRecognizer.scale;
     CGPoint origin = viewRect.origin;
-    viewRect = CGRectMake(origin.x, origin.y, viewRect.size.width/pinchScale, viewRect.size.height/pinchScale);
+    viewRect = CGRectMake(origin.x, origin.y, 
+                          viewRect.size.width/pinchScale, 
+                          viewRect.size.height/pinchScale);
     pinchRecognizer.scale = 1.0;
     [self setNeedsDisplay];
 }
@@ -92,17 +97,15 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    //new
-    // Drawing code
     //flip our view so that the origin is Lower Left
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextTranslateCTM(context, 0.0, self.frame.size.height);
     CGContextScaleCTM(context, 1.0, -1.0);
     
-    //now set our scale (window height/model height)
+    //now set our scale (window width/model width)
     CGFloat tempScale = self.frame.size.width/viewRect.size.width;
     
-    //and translate to the center of our view
+    //and translate to the center of our current location in the viewport
     CGContextScaleCTM(context, tempScale, tempScale);
     CGContextTranslateCTM(context, 
                           -viewRect.origin.x, 
@@ -122,7 +125,8 @@
     {
         modelWidth = self.frame.size.width/self.frame.size.height*modelHeight;
     }
-    CGPoint origin = CGPointMake(modelCenter.x-modelWidth/2, modelCenter.y-modelHeight/2);
+    CGPoint origin = CGPointMake(modelCenter.x-modelWidth/2, 
+                                 modelCenter.y-modelHeight/2);
     viewRect = CGRectMake(origin.x, origin.y, modelWidth, modelHeight);
 }
 
@@ -142,6 +146,8 @@
 
 - (void)ZoomToExtents
 {
+    //override this to point the origin of the viewport
+    //at the center of your model
     CGFloat modelExtent = 100;
     CGPoint modelCenter = CGPointMake(50, 0);
     [self Resize:modelExtent modelCenter:modelCenter];
