@@ -80,9 +80,12 @@
 {
     CGFloat pinchScale = pinchRecognizer.scale;
     CGPoint origin = viewRect.origin;
-    viewRect = CGRectMake(origin.x, origin.y, 
-                          viewRect.size.width/pinchScale, 
-                          viewRect.size.height/pinchScale);
+    CGPoint center = CGPointMake(viewRect.size.width/2+origin.x, 
+                                 viewRect.size.height/2+origin.y);
+    CGFloat newWidth = viewRect.size.width/pinchScale;
+    CGFloat newHeight = viewRect.size.height/pinchScale;
+    CGPoint newOrigin = CGPointMake(center.x-newWidth/2, center.y-newHeight/2);
+    viewRect = CGRectMake(newOrigin.x, newOrigin.y, newWidth, newHeight);
     pinchRecognizer.scale = 1.0;
     [self setNeedsDisplay];
 }

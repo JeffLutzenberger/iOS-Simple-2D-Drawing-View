@@ -18,8 +18,7 @@
 }
 
 -(CGFloat)extent{
-    CGFloat offset = 2.2;
-    return (CGFloat)radius*offset*3.0;
+    return 100;
 }
 
 -(CGPoint)center{
@@ -42,16 +41,16 @@
     //draw olympic rings
     //3 on top (blue, black, red)
     //2 on bottom (gold, green)
-    double offset = 2.2;
-    CGPoint p = CGPointMake(-offset*radius, radius/2);
+    double gap = radius*0.4;
+    CGPoint p = CGPointMake(-radius-gap-2*radius, 0);
     [self drawCircle:context pixelScale:pixelScale center:p color:[UIColor blueColor].CGColor];
-    p = CGPointMake(0, radius/2);
+    p = CGPointMake(-radius, 0);
     [self drawCircle:context pixelScale:pixelScale center:p color:[UIColor blackColor].CGColor];
-    p = CGPointMake(offset*radius, radius/2);
+    p = CGPointMake(radius+gap, 0);
     [self drawCircle:context pixelScale:pixelScale center:p color:[UIColor redColor].CGColor];
-    p = CGPointMake(-offset/2*radius, -radius/2);
+    p = CGPointMake(-2*radius-gap/2, -radius);
     [self drawCircle:context pixelScale:pixelScale center:p color:[UIColor yellowColor].CGColor];
-    p = CGPointMake(offset/2*radius, -radius/2);
+    p = CGPointMake(gap/2, -radius);
     [self drawCircle:context pixelScale:pixelScale center:p color:[UIColor greenColor].CGColor];
 }
 
