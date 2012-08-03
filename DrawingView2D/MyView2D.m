@@ -15,7 +15,8 @@
 {
     self = [super initWithCoder:aDecoder];
     if(self){
-        //
+        graphicsModel = [[GraphicsModel alloc] init];
+        [self ZoomToExtents];
     }
     return self;
 }
@@ -39,8 +40,19 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGFloat pixelScale = self.frame.size.width/viewRect.size.width;    
     [super  drawRect:rect];
-    [super DrawCircle];
+    [graphicsModel draw:context pixelScale:pixelScale];
+}
+
+- (void)ZoomToExtents
+{
+    //override this to point the origin of the viewport
+    //at the center of your model
+    CGFloat modelExtent = [graphicsModel extent];
+    CGPoint modelCenter = [graphicsModel center];
+    [self Resize:modelExtent modelCenter:modelCenter];
 }
 
 @end

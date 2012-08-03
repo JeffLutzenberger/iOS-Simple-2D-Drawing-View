@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC8691D615CB547E00BE66D9 /* GraphicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8691D515CB547E00BE66D9 /* GraphicsModel.m */; };
 		BCEBF55314E8339F00AF3C60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55214E8339F00AF3C60 /* UIKit.framework */; };
 		BCEBF55514E8339F00AF3C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55414E8339F00AF3C60 /* Foundation.framework */; };
 		BCEBF55714E8339F00AF3C60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBF55614E8339F00AF3C60 /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC8691D415CB547D00BE66D9 /* GraphicsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsModel.h; sourceTree = "<group>"; };
+		BC8691D515CB547E00BE66D9 /* GraphicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsModel.m; sourceTree = "<group>"; };
 		BCEBF54E14E8339F00AF3C60 /* DrawingView2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingView2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEBF55214E8339F00AF3C60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BCEBF55414E8339F00AF3C60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -166,9 +169,11 @@
 			isa = PBXGroup;
 			children = (
 				BCEBF58B14E8344600AF3C60 /* DrawingView2D.h */,
-				BCEBF58E14E834F700AF3C60 /* MyView2D.h */,
 				BCEBF58C14E8344600AF3C60 /* DrawingView2D.m */,
+				BCEBF58E14E834F700AF3C60 /* MyView2D.h */,
 				BCEBF58F14E834F700AF3C60 /* MyView2D.m */,
+				BC8691D415CB547D00BE66D9 /* GraphicsModel.h */,
+				BC8691D515CB547E00BE66D9 /* GraphicsModel.m */,
 			);
 			name = DrawingView;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 				BCEBF56914E8339F00AF3C60 /* DrawingView2DViewController.m in Sources */,
 				BCEBF58D14E8344600AF3C60 /* DrawingView2D.m in Sources */,
 				BCEBF59014E834F700AF3C60 /* MyView2D.m in Sources */,
+				BC8691D615CB547E00BE66D9 /* GraphicsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

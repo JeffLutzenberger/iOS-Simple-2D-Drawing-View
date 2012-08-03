@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "DrawingView2D.h"
+#import "GraphicsModel.h"
 
 // Our DrawingView2D implementation. This one's really simple.
-@interface MyView2D : DrawingView2D
+@interface MyView2D : DrawingView2D{
+    GraphicsModel* graphicsModel;
+}
 
 @end
