@@ -166,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				BCEBF58B14E8344600AF3C60 /* DrawingView2D.h */,
-				BCEBF58E14E834F700AF3C60 /* MyView2D.h */,
 				BCEBF58C14E8344600AF3C60 /* DrawingView2D.m */,
+				BCEBF58E14E834F700AF3C60 /* MyView2D.h */,
 				BCEBF58F14E834F700AF3C60 /* MyView2D.m */,
 			);
 			name = DrawingView;
